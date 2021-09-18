@@ -1,0 +1,468 @@
+body, p, span {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Rubik', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.gray_bg {
+    background-color: #f9fafb;
+}
+
+/* ======>>HEADER SECTION CSS <======= */
+
+.header_main .container-fluid, .Hero_section .container-fluid {
+    max-width: 1340px;
+    margin: auto;
+}
+
+.header_logo img {
+    width: 120px;
+}
+
+/* ======>>HEADER MENU CSS <======= */
+
+.header_menu span {
+    font-size: 9px;
+}
+
+.active{
+    color: #e83b3e !important;
+}
+
+ul.header_menu {}
+
+ul.header_menu li {}
+
+ul.header_menu li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 15px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+/* ul.header_menu li a:hover {
+    color: #e83b3e;
+    
+} */
+
+/* ======>>DROP DOWN MENU CSS <======= */
+
+ul.header_menu li {
+    position: relative;
+}
+
+ul.header_menu li ul {
+	position: absolute;
+	width: 235px;
+	left: 0;
+	top: 200% !important;
+	background: #fff;
+	list-style: none;
+	padding: 10px;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+	transition: all 0.4s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+}
+
+ul.header_menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: 165% !important;
+}
+
+ul.header_menu li ul li {
+    flex-direction: column;
+}
+
+ul.header_menu li ul li a {
+    transition: 0.4s;
+    padding: 10px;
+}
+
+ul.header_menu li ul li a:hover {
+    letter-spacing: 1px;
+    color: #e83b3e;
+}
+
+/* ======>>MEGA DOWN MENU CSS <======= */
+ul.header_menu li ul li a ul li{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* ======>>HEADER INFO CSS <======= */
+
+.header_info {}
+
+.header_serch {
+    width: 53px;
+}
+
+.header_serch span {
+    border-right: 1px solid #ddd;
+    padding: 0px 8px;
+    font-size: 18px;
+}
+
+.header_call {
+    width: 185px;
+}
+
+.call_icon {
+    font-size: 31px;
+    margin-right: 12px;
+    color: #e83b3e;
+}
+
+.call_icon span {}
+
+.call_info {}
+
+.call_info span {
+    display: block;
+    color: #606060;
+    font-size: 14px;
+}
+
+.call_info a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.header_buttton {}
+
+body .btn-primary {
+    background: #e83b3e !important;
+    border-color: #e83b3e;
+    display: inline-block;
+    padding: 10px 36px;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+body .btn-primary::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #111;
+    border-color: #111;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+body .btn-primary:hover::after {
+    width: 100%;
+}
+
+/* ======>>HERO SECTION CSS <======= */
+
+.Hero_section {
+    background: url(./img/main-banner2.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider_content_wrap {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.slider_content h6 {
+    font-weight: 400;
+    color: #e83b3e;
+}
+
+.slider_content h1 {
+    font-size: 55px;
+    width: 600px;
+    margin: 21px 0px;
+}
+
+.slider_content p {
+    width: 600px;
+    color: #606060;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.social_menu {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.social_menu ul {
+    list-style: none;
+}
+
+.social_menu ul li {}
+
+.social_menu ul li span {
+    font-size: 14px;
+    margin-right: 45px;
+    position: relative;
+}
+
+.social_menu ul li span::after {
+    content: "";
+    top: 8px;
+    left: 72px;
+    position: absolute;
+    height: 1px;
+    width: 53%;
+    background-color: #111;
+}
+
+.social_menu ul li a {
+    color: #111;
+    padding: 0px 15px;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.social_menu ul li a:hover {
+    color: #e83b3e;
+}
+
+/* ======>>LOGO SECTION CSS <======= */
+
+.logo_section {
+    border-bottom: 1px solid #ddd;
+}
+
+.logo_item {}
+
+.logo_item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.logo_item ul li {}
+
+.logo_item ul li img {
+    width: 190px;
+}
+
+/* ======>>ABOUT SECTION CSS <======= */
+
+.about_section {}
+
+.img_item {
+    position: relative;
+}
+
+.img_item img {
+    width: 440px;
+}
+
+.img_text {
+    position: absolute;
+    bottom: 0;
+    right: 55px;
+    background: url(./img/shape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 175px;
+    width: 191px;
+    text-align: center;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_text h2 {
+    font-size: 60px;
+    color: #e83b3e;
+}
+
+.img_text p {
+    font-weight: 500;
+}
+
+.finix_text {}
+
+.finix_text h6 {
+    color: #e83b3e;
+    font-weight: 300;
+}
+
+.finix_text h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 15px 0px;
+}
+
+.finix_text p {
+    font-size: 15px;
+    color: #606060;
+    font-weight: 400;
+}
+
+.finix_text strong {
+    color: #606060;
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.finix_text ul {
+    list-style: none;
+    padding-left: 0;
+    color: #606060;
+    font-size: 15px;
+}
+
+.finix_text ul li {}
+
+.finix_text ul li::before {
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    color: #e83b3e;
+    display: inline-block;
+    margin-right: 8px;
+    padding: 5px;
+}
+
+
+/* ======>>WHY CHOOSE US SECTION CSS <======= */
+
+.why_choose_us{}
+
+.img_item_left {
+	position: relative;
+}
+.img_item{}
+.img_item img {
+	width: 525px;
+	margin-top: 20px;
+}
+.img_item .animation_btn {
+	height: 70px;
+	display: inline-block;
+	width: 70px;
+	line-height: 70px;
+	background: #fff;
+	font-size: 48px;
+	text-align: center;
+	color: #e83b3e;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 67px;
+	right: 205px;
+}
+
+/* ======>>>>>>>> BATTON ANIMATION SECTION CSS START <<<<<<======= */
+
+.img_item .animation_btn::before{
+    content: "";
+    height: 70px;
+	width: 70px;
+	line-height: 70px;
+	background: #e83b3e;
+	border-radius: 50%;
+	position: absolute;
+    top: 0;
+    left: 0;
+
+    animation: playbtn 1.6s ease-out infinite;
+}
+@keyframes playbtn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 0.7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* ======>>>>>>>> BATTON ANIMATION SECTION CSS END <<<<<<======= */
+
+
+
+.card_item_right{
+	background: #fff;
+	padding: 25px;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    position: relative;
+
+    transition: 0.5s;
+}
+.card_item_right:hover{
+    transform: translateY(-12px);
+}
+
+.card_item_right::before {
+	content: "";
+	position: absolute;
+	top: -174px;
+	left: 0;
+	right: 0;
+	bottom: 172px;
+	margin: auto;
+	background-color: #fdebeb;
+	height: 70%;
+	width: 94%;
+	border-radius: 50%;
+}
+
+.item_icon {
+	height: 80px;
+	width: 80px;
+	background: #fff;
+	text-align: center;
+	display: inline-block;
+	line-height: 80px;
+	border-radius: 50%;
+	color: #e83b3e;
+	position: relative;
+	transition: 0.5s;
+	font-size: 40px;
+}
+
+.card_item_right:hover  .item_icon{
+    background: #e83b3e;
+    color: #fff;
+}
+
+.card_item_right h4 {
+	font-size: 23px;
+}
+.card_item_right p {
+	color: #606060;
+	font-size: 15px;
+}
+
+.mtop_last {
+	margin-top: -22px;
+}
